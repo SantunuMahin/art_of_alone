@@ -1,0 +1,212 @@
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    /* Custom text selection color */
+    ::selection {
+      background: yellow;
+      color: black;
+    }
+    /* Header Section */
+    header {
+      background-color: #fff;
+      padding: 30px;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .header-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .book-image {
+      flex: 0 0 150px;
+    }
+    .book-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .header-text {
+      flex: 1;
+      min-width: 250px;
+    }
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    header h2 {
+      font-size: 20px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+    header .intro {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .author-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+    .author-photo {
+      flex: 0 0 60px;
+    }
+    .author-photo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .author-bio {
+      font-size: 14px;
+      color: #555;
+    }
+    /* Reader Remark Section */
+    .reader-remark {
+      background-color: #fff8e1;
+      border: 1px solid #f0c040;
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 1200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-size: 15px;
+      color: #555;
+    }
+    /* Container Setup */
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto 40px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    /* Sidebar (Chapter Navigation) */
+    .sidebar {
+      background-color: #fff;
+      width: 280px;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+    .sidebar h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar li {
+      margin-bottom: 12px;
+    }
+    .sidebar li a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      display: block;
+      border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .sidebar li a:hover,
+    .sidebar li a.active {
+      background: #40f081;
+      color: #fff;
+    }
+    /* Main Content Area */
+    .content {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+    .content h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #40f0ed;
+      padding-bottom: 10px;
+    }
+    /* Card styling for chapter text */
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: background 0.3s;
+    }
+    .card:hover {
+      background: #f9f9f9;
+    }
+    /* Navigation Buttons */
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+    .nav-buttons button {
+      padding: 10px 20px;
+      background: #40f0aa;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .nav-buttons button:disabled {
+      background: #ddd;
+      cursor: not-allowed;
+    }
+    .nav-buttons button:hover:not(:disabled) {
+      background: #30db9f;
+    }
+    /* Footer Section: E-Book Creator Info */
+    footer {
+      background-color: #fff;
+      padding: 30px;
+      border-top: 1px solid #ddd;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+      max-width: 1200px;
+      margin: 0 auto 20px auto;
+      border-radius: 8px;
+    }
+    .creator-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .creator-photo {
+      flex: 0 0 80px;
+    }
+    .creator-photo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .creator-info {
+      flex: 1;
+      font-size: 15px;
+      color: #555;
+    }
+    .creator-info h4 {
+      margin-bottom: 8px;
+    }
